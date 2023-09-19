@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+typedef enum {
+    ROCK, PAPER, SCISSORS
+} RockPaperScissors;
+
+
 int main() {
 
     int player = 0;
@@ -13,10 +18,11 @@ int main() {
     cout << "3)Scissors" << endl;
     cin >> player;
 
+    // player input
     if (player == 1){
         cout << "You choose Rock"<< endl;
     } 
-    else if (player == 2) {
+      else if (player == 2) {
         cout << "You choose Paper"<< endl;
     }
     else {
@@ -35,8 +41,13 @@ int main() {
         cout<< "CPUs choose Scissors"<<endl;
     }
     
+    if (player % 3 > cpu % 3) {
+
+    }
+    
+    
     // match
-    if (player==cpu){
+     /* if (player==cpu){
         cout << "It is a tie"<< endl;
     } 
     //user chooses rock
@@ -50,6 +61,9 @@ int main() {
         }
         
     }
+    //user chooses paper
+    if(player==2){
 
+    } */ 
     return 0;
 };
