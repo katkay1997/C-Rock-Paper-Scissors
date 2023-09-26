@@ -1,10 +1,24 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 typedef enum {
     ROCK, PAPER, SCISSORS
 } RockPaperScissors;
 
+/* Psuedo Code
+    Introduce the game
+    Initialize player and cpu value
+    Ask Player to enter their choice 1, 2, or 3
+    The cpu chooses a RANDOM number 
+    The cpu display number
+    The player the enter another number
+    The cpu another random number
+    3rd time, player goes again then the CPU
+    if player wins, "Great Job! You win the game"
+    else, "Dang, you lost to the computer. Try again!"
+
+*/
 
 int main() {
 
